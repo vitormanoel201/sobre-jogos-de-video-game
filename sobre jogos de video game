@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 169px; /* Aspect Ratio da largura 16:9 */
+        }
+        .video-title {
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Catálogo de Vídeos</h1>
+    <div class="video-container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/oNEvbxlJ3LY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Título do Vídeo 1</div>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/tn0Dh4aL6qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Título do Vídeo 2</div>
+        </div>
+    </div>
+
+</body>
+</html>
